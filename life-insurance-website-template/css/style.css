@@ -96,7 +96,6 @@
     background: var(--bs-light);
 }
 
-
 /*** Topbar Start ***/ 
 .topbar .dropdown-toggle::after {
     border: none;
@@ -127,7 +126,7 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: var(--bs-white);
+    background: red; /* Cambia el color de fondo a rojo */
     transition: 1s;
 }
 
@@ -142,6 +141,7 @@
 
 .navbar .navbar-nav .nav-item .nav-link {
     padding: 0;
+    color: rgb(0, 0, 0); /* Ajusta el color del texto para que contraste con el fondo rojo */
 }
 
 .navbar .navbar-nav .nav-item {
@@ -154,8 +154,9 @@
 .navbar-light .navbar-nav .nav-item.active,
 .navbar-light .navbar-nav .nav-item:hover .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-    color: var(--bs-primary);
+    color: rgb(0, 0, 0); /* Ajusta el color del texto al pasar el mouse por encima para que contraste */
 }
+/*** Navbar End ***/
 
 @media (max-width: 991px) {
     .navbar {
