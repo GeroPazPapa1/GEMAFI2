@@ -54,22 +54,11 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-0 mx-lg-auto">
                             <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">Beneficios</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="feature.html" class="dropdown-item">Our Features</a>
-                                    <a href="team.html" class="dropdown-item">Our team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                            <a href="blog.html" class="nav-item nav-link">Productos</a>
+                            <a href="service.html" class="nav-item nav-link">Servicios</a>
+                            <a href="FAQ.html" class="nav-item nav-link">FAQ</a>
+                            <a href="contact.html" class="nav-item nav-link">Contactar</a>
+                             <!--<a href="about.html" class="nav-item nav-link">Nosotros</a>-->
                             <div class="nav-btn px-3">
                                 <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0">Abrir cuenta</a>
                             </div>
@@ -92,176 +81,448 @@
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Carousel Start -->
-        <style>
-            @keyframes slide-in {
-                0% {
-                    transform: translateX(-5%);
-                }
-                50% {
-                    transform: translateX(5%);
-                }
-                100% {
-                    transform: translateX(-5%);
-                }
-            }
-        
-            .animated-image {
-                animation: slide-in 10s infinite alternate;
-                border-radius: 15px; /* Ajusta el radio de los bordes según tus preferencias */
-                overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
-            }
-        
-            .diagonal-section {
-                position: relative;
-                overflow: hidden;
-                background-color: white; /* Fondo blanco */
-            }
-        
-            .diagonal-section .diagonal-line {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 50%;
-                background-color: white; /* Fondo blanco */
-                transform: rotate(-3deg);
-                transform-origin: top left;
-                z-index: -1;
-            }
-        
-            .diagonal-section .text-container,
-            .diagonal-section .image-container {
-                z-index: 1;
-                position: relative;
-            }
-        
-            .diagonal-section .text-container {
-                padding: 2rem;
-                color: red;
-            }
-        
-            .diagonal-section .image-container {
-                padding: 0;
-            }
-        
-            .diagonal-section .image-container img {
-                width: 100%;
-                height: auto;
-                border-radius: 15px; /* Ajusta el radio de los bordes según tus preferencias */
-                overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
-            }
-        
-            .text-primary {
-                color: red !important;
-            }
-        
-            .btn-primary {
-                background-color: red;
-                border-color: red;
-            }
-        
-            .btn-primary:hover {
-                background-color: darkred;
-                border-color: darkred;
-            }
-        
-            .header-carousel-item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-            }
-        
-            .header-carousel-item .carousel-caption {
-                position: relative;
-                z-index: 2;
-            }
-        
-            .header-carousel-item h1 {
-                font-size: 3rem;
-                line-height: 1.2;
-            }
-        
-            .header-carousel-item p,
-            .header-carousel-item h4 {
-                font-size: 1.2rem;
-            }
-        
-            .header-carousel-item .btn {
-                font-size: 1rem;
-                padding: 0.75rem 1.5rem;
-            }
-        </style>
-        
-        <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item" style="background-color: white;">
-                <div class="carousel-caption text-center">
-                    <div class="container">
-                        <div class="row g-4 align-items-center justify-content-center">
-                            <div class="col-lg-10">
-                                <h1 class="display-1 text-primary mb-4">Hacemos simple, lo complejo.</h1>
-                                <h3 class="text-primary text fw-bold mb-4">Invertir puede parecer algo complejo, nosotros transformamos la complejidad financiera en soluciones claras y accesibles para que puedas entender y manejar tus finanzas.</h3>
-                                <h4 class="text-primary text fw-bold mb-4">Abri tu cuenta de inversión sin costo, fácil y seguro</h4>
-                                <div class="d-flex justify-content-center mb-4">
-                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i>Abrir cuenta</a>
-                                    <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">WhatsApp 📞</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="header-carousel-item" style="background-color: white;">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
-                            <div class="col-lg-5 animated fadeInLeft">
-                                <div class="calrousel-img animated-image">
-                                    <img src="img/logo de las empresas.png" class="img-fluid w-100" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7 animated fadeInRight">
-                                <div class="text-sm-center text-md-end">
-                                    <h1 class="display-1 text-primary mb-4">El plazo fijo y el dólar ya no son una opción</h1>
+<!-- Carousel Start -->
+<style>
+    @keyframes slide-in {
+        0% {
+            transform: translateX(-5%);
+        }
+        50% {
+            transform: translateX(5%);
+        }
+        100% {
+            transform: translateX(-5%);
+        }
+    }
 
-                                    <h4 class="text-primary text fw-bold mb-4">Empezá a cuidar y potenciar tus ahorros invirtiendo y siendo de las mejores compañías del mundo.</h4>
-                                    <p class="mb-5 fs-5">
-                                    </p>
-                                </div>
-                            </div>
+    .animated-image {
+        animation: slide-in 10s infinite alternate;
+        border-radius: 15px; /* Ajusta el radio de los bordes según tus preferencias */
+        overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+    }
+
+    .text-primary {
+        color: red !important;
+    }
+
+    .btn-primary {
+        background-color: red;
+        border-color: red;
+    }
+
+    .btn-primary:hover {
+        background-color: darkred;
+        border-color: darkred;
+    }
+
+    .header-carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+    }
+
+    .header-carousel-item .carousel-caption {
+        position: relative;
+        z-index: 2;
+    }
+
+    .header-carousel-item h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .header-carousel-item p,
+    .header-carousel-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .header-carousel-item .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+        background-position: center; /* Centra la imagen de fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        z-index: -1;
+    }
+
+    .text-container {
+        padding: 2rem;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+<div class="header-carousel owl-carousel">
+    <div class="header-carousel-item">
+        <div class="background-image" style="background-image: url('img/fondo1.jpg');"></div>
+        <div class="carousel-caption text-center">
+            <div class="container">
+                <div class="row g-4 align-items-center justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-1 text-primary-dark mb-4">Hacemos simple, lo complejo.</h1>
+                        <h3 class="text-primary-dark text fw-bold mb-4">Invertir puede parecer algo complejo, nosotros transformamos la complejidad financiera en soluciones claras y accesibles para que puedas entender y manejar tus finanzas.</h3>
+                        <h4 class="text-primary text fw-bold mb-4">Abri tu cuenta de inversión sin costo, fácil y seguro</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i>Abrir cuenta</a>
+                            <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">WhatsApp 📞</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        
-            <div class="header-carousel-item diagonal-section">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
-                            <div class="col-lg-6 text-container">
-                                <h1 class="display-4 text-primary mb-4">Invertir es confianza</h1>
-                                <p class="mb-4 fs-5">Crear una cuenta de inversión es una decisión inteligente para tu futuro financiero! Imagina tu dinero trabajando para vos, creciendo con el tiempo y acercándote a tus metas</p>
-                                <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Abrir cuenta</a>
-                            </div>
-                            <div class="col-lg-6 image-container">
-                                <img src="img/amigable.jpeg" class="img-fluid w-100" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="diagonal-line"></div>
                 </div>
             </div>
         </div>
-        <!-- Carousel End -->
-        
+    </div>
+
+    <div class="header-carousel-item">
+        <div class="background-image" style="background-image: url('img/fondo2.jpg');"></div>
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+                    <div class="col-lg-5 animated fadeInLeft">
+                        <div class="carousel-img animated-image">
+                            <img src="img/empresased.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 animated fadeInRight">
+                        <div class="text-sm-center text-md-start">
+                            <h1 class="display-1 text-primary-dark mb-4">El plazo fijo y el dólar ya no son una opción</h1>
+                            <h4 class="text-primary-dark text fw-bold mb-4">Empezá a cuidar y potenciar tus ahorros invirtiendo y siendo de las mejores compañías del mundo.</h4>
+                            <p class="mb-5 fs-5"></p>
+                        </div>
+                    </div>                            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-carousel-item">
+        <div class="background-image" style="background-image: url('img/fondo3.jpg');"></div>
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+                    <div class="col-lg-6 text-container">
+                        <h1 class="display-4 text-primary-dark mb-4">Invertir es confianza</h1>
+                        <p class="mb-4 fs-5" style="color: #000000;">
+                            Crear una cuenta de inversión es una decisión inteligente para tu futuro financiero! Imagina tu dinero trabajando para vos, creciendo con el tiempo y acercándote a tus metas
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Abrir cuenta</a>
+                    </div>
+                    <div class="col-lg-6 image-container">
+                        <img src="img/paisajeedit.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
 
         
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <!-- <h4 class="text-primary">Servicios</h4>-->
+                    <h1 class="display-4 mb-4">Productos</h1>
+                    <!--<p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>-->
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">  
+                                <img src="img/acciones.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Acciones</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Acciones</a>
+                                <p class="mb-3">Cada acción es una porción de la propiedad de una empresa. Al poseerla te vuelves un socio en proporción al número de ellas que tengas, recibiendo derechos sobre los activos y ganancias de la empresa.</p>
+                                <!--<a href="#" class="btn p-0">Leer más  <i class="fa fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/cedears (2).png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Cedears</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Cedears</a>
+                                <p class="mb-3">Son instrumentos del mercado local que representan determinada cantidad de acciones de una compañía internacional. Permiten que un inversor local invierta en empresas de otro país sin necesidad de abrir una cuenta en el exterior.</p>
+                                <!--<a href="#" class="btn p-0">Leer más  <i class="fa fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/bonosed.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Bonos</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Bonos</a>
+                                <p class="mb-3">Un bono es un título de deuda que emite una empresa o administración pública para financiarse.</p>
+                                <!--<a href="#" class="btn p-0">Leer más  <i class="fa fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/4.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Fondos comunes de inversión</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Fondos comunes de inversión</a>
+                                <p class="mb-3">Es un producto cuyo patrimonio se constituye con el aporte de inversores que comparten similares objetivos de rentabilidad y riesgo. Este patrimonio común está integrado por un conjunto de activos que es administrado por profesionales.</p>
+                                <!--<a href="#" class="btn p-0">Leer más  <i class="fa fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.0s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/5.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Dolar MEP</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Dolar MEP</a>
+                                <p class="mb-3">Es una operación para obtener dólares de una manera legal a través del mercado de valores. La operación se realiza mediante la compra de bonos en pesos argentinos y su posterior venta en dólares estadounidenses.</p>
+                                <!--<a href="#" class="btn p-0">Leer más  <i class="fa fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/6.png" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Cauciones</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Cauciones</a>
+                                <p class="mb-3">Presta dinero a otros inversores del mercado por los días que quieras y recibe intereses a cambio.</p>
+                                <!--<a href="#" class="btn p-0">Leer más  <i class="fa fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+        
+<!-- Service Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Nuestros servicios</h4>
+            <h1 class="display-4 mb-4">Nosotros te asesoramos y acompañamos</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/8.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-building fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h4 mb-4">Empresas</a>
+                            <ul>
+                                <li>Manejo de liquidez</li>
+                                <li>Financiamiento</li>
+                                <li>Apertura de cuentas en el exterior</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/individuo.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-users fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h4 mb-4">Individuos</a>
+                            <ul>
+                                <li>Inversiones locales e internacionales</li>
+                                <li>Carteas de inversión recomendadas</li>
+                                <li>Informes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/9.png" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-users fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h4 mb-4">Wealth Management</a>
+                            <ul>
+                                <li>Inversiones locales e internacionales</li>
+                                <li>Análisis de la situación financiera</li>
+                                <li>Planificación financiera</li>
+                                <li>Soluciones personalizadas</li>
+                                <li>Educación financiera</li>
+                                <li>Apertura de cuenta bancaria en el exterior</li>
+                                <li>Informes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                                
+</div>
+<!-- Service End -->
 
-        <!-- Feature Start -->
+
+        <!-- FAQs Start -->
+        <div class="container-fluid faq-section bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <div class="mb-5">
+                                <h4 class="text-primary">Preguntas Frecuentes</h4>
+                                <h1 class="display-4 mb-0">Respuestas</h1>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            ¿Cómo hago para empezar a invertir y recibir asesoramiento?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body rounded">
+                                            Lo primero es abrir tu cuenta de inversión en INVIU o COCOS CAPITAL (ALyCs con los que tenemos convenio) con nuestro alias: GAMAFI.INVIU
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            ¿Hay un monto mínimo para comenzar a invertir?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            No tenemos un monto mínimo para comenzar a invertir.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            ¿Que es el alias cuando abro mi cuenta en INVIU O COCOS CAPITAL?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            El alias es un código que vincula tu cuenta de inversión con GEMAFI para que puedas recibir asesoramiento.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            ¿Qué costo tiene la apertura de cuenta?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            La apertura de cuenta en INVIU o COCOS CAPITAL no tiene ningún costo. El único costo implicado es el arancel por operación de compra y/o venta de 0.9%.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            ¿Que costo tiene el asesoramiento?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            El asesoramiento no tiene ningún costo.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            ¿Que es un ALyC?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            En Argentina, un ALyC (Agente de Liquidación y Compensación) es una sociedad autorizada por la Comisión Nacional de Valores (CNV) para actuar como intermediario entre los inversores y los mercados financieros. Sus funciones principales son:
+                                        
+                                            1: Se encargan de procesar y finalizar las transacciones de compra y venta de valores negociables, garantizando que los compradores reciban los valores y los vendedores reciban el dinero correspondiente.
+                                            2: Guardan y administran los valores negociables de sus clientes de forma segura.
+                                            3: Intervienen tanto en la colocación inicial de valores (mercado primario) como en la negociación de valores ya emitidos (mercado secundario).</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/FQS.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+
+        <!-- Feature Start 
         <div class="container-fluid feature bg-light py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -317,10 +578,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Feature End -->
 
-        <!-- About Start -->
+        <!-- About Start 
         <div class="container-fluid bg-light about pb-5">
             <div class="container pb-5">
                 <div class="row g-5">
@@ -387,289 +648,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- About End -->
 
-        <!-- Service Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Services</h4>
-                    <h1 class="display-4 mb-4">We Provide Best Services</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="service-icon p-3">
-                                    <i class="fa fa-users fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="service-content p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="d-inline-block h4 mb-4">Life </a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="service-icon p-3">
-                                    <i class="fa fa-hospital fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="service-content p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="d-inline-block h4 mb-4">Health </a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="service-icon p-3">
-                                    <i class="fa fa-car fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="service-content p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="d-inline-block h4 mb-4">Car </a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/blog-4.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="service-icon p-3">
-                                    <i class="fa fa-home fa-2x"></i>
-                                </div>
-                            </div>
-                            <div class="service-content p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="d-inline-block h4 mb-4">Home </a>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Services</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-
-        <!-- FAQs Start -->
-        <div class="container-fluid faq-section bg-light py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="h-100">
-                            <div class="mb-5">
-                                <h4 class="text-primary">Some Important FAQ's</h4>
-                                <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Q: What happens during Freshers' Week?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body rounded">
-                                            A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Q: What is the transfer application process?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Q: Why should I attend community college?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <img src="img/carousel-2.png" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FAQs End -->
-
-        <!-- Blog Start -->
-        <div class="container-fluid blog py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Servicios</h4>
-                    <h1 class="display-4 mb-4">Productos</h1>
-                    <!--<p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.</p>-->
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/acciones.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Acciones</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Acciones</a>
-                                <p class="mb-3">Cada acción es una porción de la propiedad de una empresa. Al poseerla te vuelves un socio en proporción al número de ellas que tengas, recibiendo derechos sobre los activos y ganancias de la empresa.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Cedears</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Cedears</a>
-                                <p class="mb-3">Son instrumentos del mercado local que representan determinada cantidad de acciones de una compañía internacional. Permiten que un inversor local invierta en empresas de otro país sin necesidad de abrir una cuenta en el exterior.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Bonos</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Bonos</a>
-                                <p class="mb-3">Un bono es un título de deuda que emite una empresa o administración pública para financiarse.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-4.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Fondos comunes de inversión</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Alex.D</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 25 Nov 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 3 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Fondos comunes de inversión</a>
-                                <p class="mb-3">Es un producto cuyo patrimonio se constituye con el aporte de inversores que comparten similares objetivos de rentabilidad y riesgo. Este patrimonio común está integrado por un conjunto de activos que es administrado por profesionales.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.0s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Dolar MEP</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Sarah.L</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 15 Oct 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 8 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Dolar MEP</a>
-                                <p class="mb-3">Es una operación para obtener dólares de una manera legal a través del mercado de valores. La operación se realiza mediante la compra de bonos en pesos argentinos y su posterior venta en dólares estadounidenses.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Cauciones</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> John.M</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 5 Sep 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 12 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Cauciones</a>
-                                <p class="mb-3">Presta dinero a otros inversores del mercado por los días que quieras y recibe intereses a cambio.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
 
 
-        <!-- Team Start -->
+
+
+
+
+
+        <!-- Team Start 
         <div class="container-fluid team pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -749,10 +738,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Team End -->
 
-        <!-- Testimonial Start -->
+        <!-- Testimonial Start 
         <div class="container-fluid testimonial pb-5">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -836,7 +825,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Testimonial End -->
 
 
@@ -850,10 +839,10 @@
                                 <div class="col-md-6 col-lg-6 col-xl-5">
                                     <div class="footer-item">
                                         <a href="index.html" class="p-0">
-                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
+                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> GEMAFI</h3>
                                             <!-- <img src="img/logo.png" alt="Logo"> -->
                                         </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                        <p class="text-white mb-4">Capital Management</p>
                                         <div class="footer-btn d-flex">
                                             <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
                                             <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -940,8 +929,8 @@
                                                     <i class="fas fa-map-marker-alt fa-2x"></i>
                                                 </div>
                                                 <div>
-                                                    <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
+                                                    <h4 class="text-white">Dirección</h4>
+                                                    <p class="mb-0">Argentina</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -951,8 +940,8 @@
                                                     <i class="fas fa-envelope fa-2x"></i>
                                                 </div>
                                                 <div>
-                                                    <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
+                                                    <h4 class="text-white">Mail</h4>
+                                                    <p class="mb-0">arreyes13@gmail.com</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -962,8 +951,8 @@
                                                     <i class="fa fa-phone-alt fa-2x"></i>
                                                 </div>
                                                 <div>
-                                                    <h4 class="text-white">Telephone</h4>
-                                                    <p class="mb-0">(+012) 3456 7890</p>
+                                                    <h4 class="text-white">Teléfono</h4>
+                                                    <p class="mb-0">+549 381 664-2289</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -976,10 +965,10 @@
                     <div class="col-xl-3">
                         <div class="footer-item">
                             <h4 class="text-white mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-white mb-3">Enterate de todas las novedades</p>
                             <div class="position-relative rounded-pill mb-4">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Registrate</button>
                             </div>
                             <div class="d-flex flex-shrink-0">
                                 <div class="footer-btn">
@@ -991,8 +980,8 @@
                                     </a>
                                 </div>
                                 <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                    <span>Call to Our Experts</span>
-                                    <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
+                                    <span>Llamanos</span>
+                                    <a href="tel:+ 0123 456 7890"><span class="text-white">+549 381 664-2289</span></a>
                                 </div>
                             </div>
                         </div>
@@ -1007,7 +996,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>GEMAFI - CAPITAL MANAGEMENT</a>, All right reserved.</span>
                     </div>
                 </div>
             </div>
